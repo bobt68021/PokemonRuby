@@ -20,7 +20,7 @@ class Trainer
       @pokemon.each do |pokemon|
         print "#{i}: #{pokemon.name}"
         print pokemon.hp > 0? " (available)" : " (unavailable)"
-        print index = @current_pokemon_index ? " (current)" : ""
+        #print i == @current_pokemon_index ? " (current)" : ""
         STDOUT.flush
         puts ""
         i += 1
@@ -35,7 +35,7 @@ class Trainer
       @pokemon.each do |pokemon|
         print "#{i}: #{pokemon.name}"
         print pokemon.hp > 0? " (available)" : " (unavailable)"
-        print index = @current_pokemon_index ? " (current)" : ""
+        #print i == @current_pokemon_index ? " (current)" : ""
         STDOUT.flush
         puts ""
         i += 1
