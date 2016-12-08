@@ -1,10 +1,11 @@
 
 class Pokemon
-  attr_accessor :name, :hp, :move_set, :attack, :defense
+  attr_accessor :name, :max_hp, :move_set, :attack, :defense, :hp
 
-  def initialize name, hp, attack, defense, move_set
+  def initialize name, max_hp, attack, defense, move_set
     @name = name
-    @hp = hp
+    @max_hp = max_hp
+    @hp = max_hp
     @attack = attack
     @defense = defense
     @move_set = move_set
@@ -22,8 +23,16 @@ class Pokemon
         puts "\n#{@name} lunges, ignoring #{target_pokeon.name}\'s defenses for #{1*@attack} damage."
         target_pokeon.hp -= 1*@attack
       when 'Heal'
-        puts "\n#{@name} heals for 25 points of health."
-        @hp += 25
+        if @hp >= @max_hp
+          puts "\n#{@name} is at full health already, you just wasted a turn. May god have mercy on your soul."
+        elsif @hp > @max_hp - 25
+          puts "\n#{@name} heals for #{(@max_hp - @hp).to_i} points of health."
+          @hp += @max_hp - @hp
+        else
+          puts "\n#{@name} heals for 25 points of health."
+          @hp += 25
+        end
+
       when 'Defense Curl'
         puts "\n#{@name} curls up to conceal weak spots and raise its Defense stat by 10 points."
         @defense += 10

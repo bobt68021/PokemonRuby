@@ -63,7 +63,7 @@ class Game
     puts "\n(attacker) #{attacker.name}\'s current pokemon: \s\s (#{attacker.current_pokemon.hp.to_i}HP) #{attacker.current_pokemon.name} "
     puts "(defender) #{defender.name}\'s current pokemon: \s (#{defender.current_pokemon.hp.to_i}HP) #{defender.current_pokemon.name} "
 
-    puts "\nEnter #{attacker.name} \'s action: \n\s\s0: Attack\n\s\s1: Item\n\s\s2: Send out new pokemon"
+    puts "\nEnter #{attacker.name}\'s action: \n\s\s0: Attack\n\s\s1: Item\n\s\s2: Send out new pokemon"
     action = gets.chomp
 
     case action
