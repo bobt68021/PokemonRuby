@@ -4,24 +4,26 @@ require_relative 'enemy'
 
 class Game
   attr_accessor :game_status, :trainer, :enemy, :turn
-
   def initialize
+    move_set1 = ['Tackle', 'Body Slam', 'Growl', 'Leer']
+    move_set2 = ['Pierce', 'Bulk up', 'Sharpen', 'Heal']
+
     ash_pokemon = []
-    ash_pokemon << Pokemon.new("Pikachu", 50, 50)
-    ash_pokemon << Pokemon.new("Butterfree" ,40, 50)
-    ash_pokemon << Pokemon.new("Pidgeotto", 60, 50)
-    ash_pokemon << Pokemon.new("Bulbasaur", 45, 50)
-    ash_pokemon << Pokemon.new("Charmander", 55, 50)
-    ash_pokemon << Pokemon.new("Squirtle", 50, 50)
+    ash_pokemon << Pokemon.new('Pikachu', 50, 50, 50, move_set1)
+    ash_pokemon << Pokemon.new('Butterfree' ,40, 50, 50, move_set2)
+    ash_pokemon << Pokemon.new('Pidgeotto', 60, 50, 50, move_set2)
+    ash_pokemon << Pokemon.new('Bulbasaur', 45, 50, 50, move_set1)
+    ash_pokemon << Pokemon.new('Charmander', 55, 50, 50, move_set1)
+    ash_pokemon << Pokemon.new('Squirtle', 50, 50, 50, move_set1)
     ash_items = { 'Potion' => 2, 'Super Potion' => 1 }
 
     gary_pokemon = []
-    gary_pokemon << Pokemon.new("Flareon", 50, 50)
-    gary_pokemon << Pokemon.new("Metapod", 30, 50)
-    gary_pokemon << Pokemon.new("Spearow", 60, 50)
-    gary_pokemon << Pokemon.new("Rattata", 35, 50)
-    gary_pokemon << Pokemon.new("Nidoran", 40, 50)
-    gary_pokemon << Pokemon.new("Sandshrew", 50, 50)
+    gary_pokemon << Pokemon.new('Flareon', 50, 50, 50, move_set1)
+    gary_pokemon << Pokemon.new('Scyther', 100, 50, 50, move_set2)
+    gary_pokemon << Pokemon.new('Spearow', 60, 50, 50, move_set1)
+    gary_pokemon << Pokemon.new('Rattata', 35, 50, 50, move_set2)
+    gary_pokemon << Pokemon.new('Nidoran', 40, 50, 50, move_set1)
+    gary_pokemon << Pokemon.new('Sandshrew', 50, 50, 50, move_set2)
     gary_items = { 'Potion' => 2, 'Super Potion' => 1 }
 
 

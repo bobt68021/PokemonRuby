@@ -14,25 +14,25 @@ ash_pokemon << Pokemon.new("Squirtle", 50, 50, 50, [])
 ash_items = { 'Potion' => 2, 'Super Potion' => 1 }
 
 
-# describe 'Game tests' do
-#   game = Game.new
-#
-#   it 'should have a trainer' do
-#     expect(game.trainer == nil).to be false
-#   end
-#
-#   it 'should have a trainer' do
-#     expect(game.enemy == nil).to be false
-#   end
-#
-#   it 'should have a turn' do
-#     expect(game.turn == nil).to be false
-#   end
-#
-#   it 'can take turns' do
-#     game.take_turn
-#   end
-# end
+describe 'Game tests' do
+  game = Game.new
+
+  it 'should have a trainer' do
+    expect(game.trainer == nil).to be false
+  end
+
+  it 'should have a trainer' do
+    expect(game.enemy == nil).to be false
+  end
+
+  it 'should have a turn' do
+    expect(game.turn == nil).to be false
+  end
+  #
+  # it 'can take turns' do
+  #   game.take_turn
+  # end
+end
 
 describe 'Trainer tests' do
   trainer = Trainer.new('Trainer', ash_pokemon, ash_items)
