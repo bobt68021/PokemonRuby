@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a52b1687-67ac-4ebc-bb87-c7793f8f6738" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/game.rb" afterPath="$PROJECT_DIR$/lib/game.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/pokemon.rb" afterPath="$PROJECT_DIR$/lib/pokemon.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/trainer.rb" afterPath="$PROJECT_DIR$/lib/trainer.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/pokemon_spec.rb" afterPath="$PROJECT_DIR$/spec/pokemon_spec.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +16,7 @@
     <SUITE FILE_PATH="coverage/PokemonBattle@pokemon_tests.coverage" NAME="pokemon_tests Coverage Results" MODIFIED="1481125677042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spec" MODULE_NAME="PokemonBattle" />
     <SUITE FILE_PATH="coverage/PokemonBattle@All_specs_in_PokemonBattle__PokemonBattle.coverage" NAME="All specs in PokemonBattle: PokemonBattle Coverage Results" MODIFIED="1481137149661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="PokemonBattle" />
     <SUITE FILE_PATH="coverage/PokemonBattle@main.coverage" NAME="main Coverage Results" MODIFIED="1481123617551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" MODULE_NAME="PokemonBattle" />
-    <SUITE FILE_PATH="coverage/PokemonBattle@Run_spec__pokemon_spec___PokemonBattle.coverage" NAME="Run spec 'pokemon_spec': PokemonBattle Coverage Results" MODIFIED="1481222104661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="PokemonBattle" />
+    <SUITE FILE_PATH="coverage/PokemonBattle@Run_spec__pokemon_spec___PokemonBattle.coverage" NAME="Run spec 'pokemon_spec': PokemonBattle Coverage Results" MODIFIED="1481224450641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="PokemonBattle" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -44,8 +40,8 @@
       <file leaf-file-name="trainer.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/trainer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-97">
-              <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="33">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,8 +60,8 @@
       <file leaf-file-name="pokemon_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/pokemon_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="115" column="34" lean-forward="false" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
+            <state relative-caret-position="-163">
+              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,8 +100,8 @@
       <file leaf-file-name="pokemon.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/pokemon.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+            <state relative-caret-position="66">
+              <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -452,44 +448,44 @@
       <workItem from="1481120138299" duration="11279000" />
       <workItem from="1481136270726" duration="517000" />
       <workItem from="1481136878121" duration="11137000" />
-      <workItem from="1481206217034" duration="11571000" />
+      <workItem from="1481206217034" duration="13719000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 13h 26m 08s.xml">
+    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 14h 00m 09s.xml">
       <configuration name="Run spec 'pokemon_spec': PokemonBattle" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 13h 26m 38s.xml">
+    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 14h 00m 37s.xml">
       <configuration name="Run spec 'pokemon_spec': PokemonBattle" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 13h 30m 26s.xml">
+    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 14h 04m 45s.xml">
       <configuration name="Run spec 'pokemon_spec': PokemonBattle" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 13h 30m 35s.xml">
+    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 14h 04m 58s.xml">
       <configuration name="Run spec 'pokemon_spec': PokemonBattle" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 13h 30m 45s.xml">
+    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 14h 05m 28s.xml">
       <configuration name="Run spec 'pokemon_spec': PokemonBattle" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 13h 31m 35s.xml">
+    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 14h 05m 44s.xml">
       <configuration name="Run spec 'pokemon_spec': PokemonBattle" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 13h 31m 45s.xml">
+    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 14h 07m 43s.xml">
       <configuration name="Run spec 'pokemon_spec': PokemonBattle" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 13h 33m 40s.xml">
+    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 14h 10m 18s.xml">
       <configuration name="Run spec 'pokemon_spec': PokemonBattle" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 13h 34m 43s.xml">
+    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 14h 10m 53s.xml">
       <configuration name="Run spec 'pokemon_spec': PokemonBattle" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 13h 35m 04s.xml">
+    <history-entry file="Run_spec_'pokemon_spec'__PokemonBattle - 2016.12.08 at 14h 14m 10s.xml">
       <configuration name="Run spec 'pokemon_spec': PokemonBattle" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34504000" />
+    <option name="totallyTimeSpent" value="36652000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2906" height="1754" extended-state="6" />
@@ -720,14 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/trainer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/move.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -738,16 +726,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/pokemon.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        <state relative-caret-position="66">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/trainer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/pokemon_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="115" column="34" lean-forward="false" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
+        <state relative-caret-position="-163">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
       </provider>

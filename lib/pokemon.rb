@@ -1,13 +1,13 @@
 
 class Pokemon
-  attr_accessor :name, :hp, :moves, :attack, :defense
+  attr_accessor :name, :hp, :move_set, :attack, :defense
 
   def initialize name, hp, attack, defense, move_set
     @name = name
     @hp = hp
     @attack = attack
     @defense = defense
-    @moves = move_set
+    @move_set = move_set
   end
 
   def perform_move(move_name, target_pokeon)
@@ -19,7 +19,7 @@ class Pokemon
       when 'Pierce'
         target_pokeon.hp -= 1*@attack
       when 'Heal'
-        target_pokeon.hp += 0.5*@hp
+        @hp += 25
       when 'Defense Curl'
         @defense += 10
       when 'Sharpen'
@@ -34,26 +34,26 @@ class Pokemon
     end
   end
 
-  def describe_move (move_name)
+  def describe_move (move_name, target_pokeon)
     case move_name
       when 'Tackle'
-        puts 'The user charges the foe with a full-body tackle'
+        puts "#{@name} charges #{target_pokeon.name} with a full-body tackle for #{(1*@attack - 0.5*target_pokeon.defense).to_i} damage."
       when 'Body Slam'
-        puts 'The user drops its full body on the foe'
+        puts "#{@name} drops its full body on #{target_pokeon.name} for #{(1.5*@attack - 0.5*target_pokeon.defense).to_i} damage."
       when 'Pierce'
-        puts 'The user lunges, ignoring targets defenses'
+        puts "#{@name} lunges, ignoring #{target_pokeon.name}\'s defenses for #{1*@attack} damage."
       when 'Heal'
-        puts 'Heals for 25% of max health'
+        puts "#{@name} heals for 25 points of health."
       when 'Defense Curl'
-        puts 'The user curls up to conceal weak spots and raise its Defense stat'
+        puts "#{@name} curls up to conceal weak spots and raise its Defense stat by 10 points."
       when 'Sharpen'
-        puts 'The user makes its edges more jagged, which raises its Attack stat.'
+        puts "#{@name} makes its edges more jagged, which raises its Attack stat by 10 points."
       when 'Bulk up'
-        puts 'The user tenses its muscles to bulk up its body, boosting both its Attack and Defense stats.'
+        puts "#{@name} tenses its muscles to bulk up its body, boosting both its Attack and Defense stats by 10 points each."
       when 'Growl'
-        puts 'The user growls in an endearing way, making the foe less wary. The target\'s Attack stat is lowered.'
+        puts "#{@name} growls in an endearing way, making #{target_pokeon.name} less wary. The #{target_pokeon.name}\'s Attack stat is lowered by 10 points."
       when 'Leer'
-        puts 'The user gives opposing Pokémon an intimidating leer that lowers the Defense stat.'
+        puts "#{@name} gives #{target_pokeon.name} an intimidating leer that lowers #{target_pokeon.name}\'s Defense stat by 10."
     end
   end
 end
