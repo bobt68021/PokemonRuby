@@ -13,7 +13,6 @@ ash_pokemon << Pokemon.new("Charmander", 55, 50, 50, [])
 ash_pokemon << Pokemon.new("Squirtle", 50, 50, 50, [])
 ash_items = { 'Potion' => 2, 'Super Potion' => 1 }
 
-
 describe 'Game tests' do
   game = Game.new
 
@@ -28,10 +27,10 @@ describe 'Game tests' do
   it 'should have a turn' do
     expect(game.turn == nil).to be false
   end
-  #
-  # it 'can take turns' do
-  #   game.take_turn
-  # end
+
+  it 'can take turns' do
+    game.take_turn
+  end
 end
 
 describe 'Trainer tests' do
@@ -76,10 +75,7 @@ end
 
 describe 'Move test' do
   move_set1 = ['Tackle', 'Body Slam', 'Growl', 'Leer']
-  scyther  = Pokemon.new('Scyther ', 100, 50, 50, move_set1)
-
   move_set2 = ['Pierce', 'Bulk up', 'Sharpen', 'Heal']
-  scyther  = Pokemon.new('Scyther ', 100, 50, 50, move_set2)
 
   it 'should do damage when a tackle' do
     bulbasaur = Pokemon.new('Bulbasaur', 100, 50, 50, move_set1)

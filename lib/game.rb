@@ -60,8 +60,8 @@ class Game
 
   def turn_action (attacker, defender)
     puts "\n\n**  #{attacker.name}\'s Turn!  **"
-    puts "\n%-20s(attacker) #{attacker.name}\'s current pokemon: \s\s (#{attacker.current_pokemon.hp}HP) #{attacker.current_pokemon.name} "
-    puts "(defender) #{defender.name}\'s current pokemon: \s (#{defender.current_pokemon.hp}HP) #{defender.current_pokemon.name} "
+    puts "\n(attacker) #{attacker.name}\'s current pokemon: \s\s (#{attacker.current_pokemon.hp.to_i}HP) #{attacker.current_pokemon.name} "
+    puts "(defender) #{defender.name}\'s current pokemon: \s (#{defender.current_pokemon.hp.to_i}HP) #{defender.current_pokemon.name} "
 
     puts "\nEnter #{attacker.name} \'s action: \n\s\s0: Attack\n\s\s1: Item\n\s\s2: Send out new pokemon"
     action = gets.chomp
@@ -79,8 +79,10 @@ class Game
   end
 
   def get_attack(attacker, defender)
-    puts "#{attacker.name}\'s #{attacker.current_pokemon.name} attacks #{defender.name}\'s #{defender.current_pokemon.name} for 100 damage!\n\n"
-    defender.current_pokemon.hp -= 100
+    print_moves(attacker.current_pokemon)
+    puts "Enter move number:"
+    move = gets.chomp.to_i
+    attacker.current_pokemon.perform_move(attacker.current_pokemon.move_set[move], defender.current_pokemon)
     if(defender.current_pokemon.hp <= 0)
       puts "#{defender.name}\'s #{defender.current_pokemon.name} Fainted!!"
       defender.pokemon_left -= 1
@@ -92,6 +94,29 @@ class Game
       end
     end
   end
+
+  def print_moves(attacker)
+    i = 0
+    puts "\n"
+    attacker.move_set.each do |move|
+      printf "%s: %s\n", i, move
+      i+=1
+    end
+  end
+
+    # puts "#{attacker.name}\'s #{attacker.current_pokemon.name} attacks #{defender.name}\'s #{defender.current_pokemon.name} for 100 damage!\n\n"
+    # defender.current_pokemon.hp -= 100
+    # if(defender.current_pokemon.hp <= 0)
+    #   puts "#{defender.name}\'s #{defender.current_pokemon.name} Fainted!!"
+    #   defender.pokemon_left -= 1
+    #   if defender.pokemon_left > 0
+    #     puts "\n#{defender.name}, choose new Pokemon..."
+    #     defender.choose_new_pokemon
+    #   else
+    #     @game_status = 0
+    #   end
+    # end
+    # end
 
   def get_item(attacker)
     print_items(attacker)

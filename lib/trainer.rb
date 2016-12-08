@@ -20,8 +20,10 @@ class Trainer
 
     if @pokemon[choice].hp <=0
       puts "#{@pokemon[choice].name} has no will to fight... "
-    elsif @current_pokemon == choice
+      choose_new_pokemon
+    elsif @current_pokemon_index == choice
       puts "#{@pokemon[choice].name} is already out!"
+      choose_new_pokemon
     else
       @current_pokemon = @pokemon[choice]
       @current_pokemon_index = choice
