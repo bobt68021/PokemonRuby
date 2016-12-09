@@ -9,21 +9,21 @@ class Game
     move_set2 = ['Pierce', 'Bulk up', 'Sharpen', 'Heal']
 
     ash_pokemon = []
-    ash_pokemon << Pokemon.new('Pikachu', 50, 50, 50, move_set1)
-    ash_pokemon << Pokemon.new('Butterfree' ,40, 50, 50, move_set2)
-    ash_pokemon << Pokemon.new('Pidgeotto', 60, 50, 50, move_set2)
-    ash_pokemon << Pokemon.new('Bulbasaur', 45, 50, 50, move_set1)
-    ash_pokemon << Pokemon.new('Charmander', 55, 50, 50, move_set1)
-    ash_pokemon << Pokemon.new('Squirtle', 50, 50, 50, move_set1)
+    ash_pokemon << Pokemon.new('Pikachu', 50, 55, 40, move_set1)
+    ash_pokemon << Pokemon.new('Butterfree' ,55, 40, 40, move_set2)
+    ash_pokemon << Pokemon.new('Pidgeotto', 60, 60, 40, move_set2)
+    ash_pokemon << Pokemon.new('Bulbasaur', 40, 45, 55, move_set1)
+    ash_pokemon << Pokemon.new('Charmander', 55, 55, 40, move_set1)
+    ash_pokemon << Pokemon.new('Squirtle', 55, 50, 65, move_set1)
     ash_items = { 'Potion' => 2, 'Super Potion' => 1 }
 
     gary_pokemon = []
-    gary_pokemon << Pokemon.new('Flareon', 50, 50, 50, move_set1)
-    gary_pokemon << Pokemon.new('Scyther', 100, 50, 50, move_set2)
-    gary_pokemon << Pokemon.new('Spearow', 60, 50, 50, move_set1)
-    gary_pokemon << Pokemon.new('Rattata', 35, 50, 50, move_set2)
-    gary_pokemon << Pokemon.new('Nidoran', 40, 50, 50, move_set1)
-    gary_pokemon << Pokemon.new('Sandshrew', 50, 50, 50, move_set2)
+    gary_pokemon << Pokemon.new('Flareon', 60, 60, 50, move_set1)
+    gary_pokemon << Pokemon.new('Scyther', 70, 70, 50, move_set2)
+    gary_pokemon << Pokemon.new('Spearow', 60, 50, 40, move_set1)
+    gary_pokemon << Pokemon.new('Rattata', 35, 40, 40, move_set2)
+    gary_pokemon << Pokemon.new('Nidoran', 45, 45, 50, move_set1)
+    gary_pokemon << Pokemon.new('Sandshrew', 40, 40, 60, move_set2)
     gary_items = { 'Potion' => 2, 'Super Potion' => 1 }
 
 
@@ -81,8 +81,8 @@ class Game
   def get_attack(attacker, defender)
     print_moves(attacker.current_pokemon)
     puts "Enter move number:"
-    move = gets.chomp.to_i
-    attacker.current_pokemon.perform_move(attacker.current_pokemon.move_set[move], defender.current_pokemon)
+    move = gets.chomp
+    attacker.current_pokemon.perform_move(attacker.current_pokemon.move_set[move.to_i], defender.current_pokemon)
     if(defender.current_pokemon.hp <= 0)
       puts "#{defender.name}\'s #{defender.current_pokemon.name} Fainted!!"
       defender.pokemon_left -= 1
@@ -103,20 +103,6 @@ class Game
       i+=1
     end
   end
-
-    # puts "#{attacker.name}\'s #{attacker.current_pokemon.name} attacks #{defender.name}\'s #{defender.current_pokemon.name} for 100 damage!\n\n"
-    # defender.current_pokemon.hp -= 100
-    # if(defender.current_pokemon.hp <= 0)
-    #   puts "#{defender.name}\'s #{defender.current_pokemon.name} Fainted!!"
-    #   defender.pokemon_left -= 1
-    #   if defender.pokemon_left > 0
-    #     puts "\n#{defender.name}, choose new Pokemon..."
-    #     defender.choose_new_pokemon
-    #   else
-    #     @game_status = 0
-    #   end
-    # end
-    # end
 
   def get_item(attacker)
     print_items(attacker)

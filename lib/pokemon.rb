@@ -32,7 +32,6 @@ class Pokemon
           puts "\n#{@name} heals for 25 points of health."
           @hp += 25
         end
-
       when 'Defense Curl'
         puts "\n#{@name} curls up to conceal weak spots and raise its Defense stat by 10 points."
         @defense += 10

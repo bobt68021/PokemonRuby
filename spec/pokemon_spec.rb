@@ -28,9 +28,9 @@ describe 'Game tests' do
     expect(game.turn == nil).to be false
   end
 
-  # it 'can take turns' do
-  #   game.take_turn
-  # end
+  it 'can take turns' do
+    game.take_turn
+  end
 end
 
 describe 'Trainer tests' do
